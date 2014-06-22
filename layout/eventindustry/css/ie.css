@@ -1,0 +1,8 @@
+.shadow {
+    behavior: url('../../js/ie/PIE.htc');
+}
+
+.gradient {
+    -pie-background: linear-gradient(#EEFF99, #66EE33);
+    behavior: url('../../js/ie/PIE.htc');
+}

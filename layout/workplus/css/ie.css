@@ -1,0 +1,27 @@
+#container {
+    _width: 990px;
+}
+#content {
+    _margin-top: -20px;
+}
+#one {
+    _margin-left: 2%;
+}
+#plashka1 {
+    _position: relative;
+    _top: -31px;
+}
+#plashka2 {
+    _position: relative;
+    _top: -23px;
+}
+#main_menu {
+    _width: 450px;
+    _margin-right: 0px;
+}
+#sidebar {
+    _margin-top: 5px;
+}
+#bottom_nav {
+    _margin-left: 2%;
+}

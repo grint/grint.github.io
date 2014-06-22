@@ -1,0 +1,7 @@
+#tours .tour {
+    background: url('../images/tableTh2IE.png') 0 0 no-repeat;
+}
+
+#tours {
+    overflow: hidden
+}

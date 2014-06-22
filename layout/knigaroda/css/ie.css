@@ -1,0 +1,19 @@
+.cor1 {
+    _background: url('../img/corners.gif') 0 0 no-repeat;
+}
+
+.cor2 {
+    _background: url('../img/corners.gif') 100% 0 no-repeat;
+}
+
+.cor3 {
+    _background: url('../img/corners.gif') 0 100% no-repeat;
+}
+
+.cor4 {
+    _background: url('../img/corners.gif') 100% 100% no-repeat;
+}
+
+#phone {
+    _margin-left: 10px;
+}

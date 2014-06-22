@@ -1,0 +1,588 @@
+/*-------- CSS Reset --------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*----------------------------------- Global --------------------------------------------*/
+html, body {
+    margin: 0;
+    padding: 0;
+    min-width: 990px;
+    height: 100%;
+}
+
+body {
+    font: 12px Arial, Helvetica, sans-serif;
+    background: #dcdcdc;
+}
+
+/*----------------------------------- Wrapper -------------------------------------------*/
+#container {
+    float: left;
+    width: 100%;
+    position: relative;
+    min-height: 100%;
+    background: url('../img/head.jpg') 50% 0 no-repeat;
+    z-index: 2;
+}
+
+#outer {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#wrapper {
+    float: left;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#content {
+    float: left;
+    width: 850px;
+    padding: 0 75px;
+}
+
+/*----------------------------------- Header ---------------------------------------------*/
+#headBack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 801px;
+    background: #18222d;
+    z-index: 1;
+}
+
+header {
+    float: left;
+    width: 100%;
+    height: 840px;
+    position: relative;
+}
+
+a.logo {
+    display: block;
+    width: 517px;
+    height: 104px;
+    position: absolute;
+    top: 70px;
+    left: 244px;
+    background: url('../img/logoOver.png') 0 0 no-repeat;
+}
+
+.buyButs {
+    position: absolute;
+    top: 688px;
+    left: 380px;
+    width: 238px;
+    height: 55px;
+    font-size: 15px;
+}
+
+.buyButs .inn {
+    width: 100%;
+    height: 55px;
+    position: relative;
+}
+
+.buyButs a {
+    float: left;
+    color: #fff;
+    line-height: 55px;
+    width: 104px;
+    height: 55px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent;
+}
+
+a.order, a.order b {
+    padding-right: 15px;
+    text-align: right;
+}
+
+a.demo, a.demo b {
+    padding-left: 15px;
+    float: right;
+}
+
+a.order b {
+    position: absolute;
+    width: 104px;
+    height: 55px;
+    left: 0;
+    top: 0;
+    background: url('../img/butTop.png') 0 0 no-repeat;
+    color: #fff;
+    line-height: 55px;
+    font-weight: normal;
+}
+
+a.demo b {
+    position: absolute;
+    width: 104px;
+    height: 55px;
+    right: 0;
+    top: 0;
+    background: url('../img/butTop.png') 100% 0 no-repeat;
+    color: #fff;
+    line-height: 55px;
+    font-weight: normal;
+}
+
+@media not all and (-webkit-min-device-pixel-ratio) {
+    a.logo {
+        left: 245px;
+    }
+
+    a.demo b {
+        background-position: -118px 0;
+    }
+}
+
+/*Opera*/
+
+/*----------------------------- Content Elements ----------------------------------------*/
+.hr {
+    float: left;
+    width: 910px;
+    height: 2px;
+    background: url('../img/hr.gif') 0 0 repeat-x;
+    margin: 30px -30px;
+}
+
+article p {
+    font: 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #000;
+    padding-bottom: 5px;
+}
+
+article h1 {
+    color: #000;
+    font: bold 41px Arial, Helvetica, sans-serif;
+    padding: 15px 0;
+    text-shadow: 2px 2px 0px #f0f0f0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+article h2, article h3, article h4, article h5, article h6 {
+    color: #000;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    padding: 10px 0;
+}
+
+article h2 {
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+article h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+article h4 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+article h5 {
+    font-size: 14px;
+}
+
+article h6 {
+    font-size: 12px;
+}
+
+article ul {
+    list-style-position: inside;
+    color: #545454;
+    margin: 0px 10px 5px;
+}
+
+article ol {
+    list-style-position: outside;
+    color: #545454;
+    margin: 0px 10px 5px;
+}
+
+article a:link, article a:visited {
+    color: #00235D;
+    text-decoration: none;
+}
+
+article a:hover, articlet a:active {
+    color: #3B7500;
+    text-decoration: underline;
+}
+
+/*------------------------------- Clients Slider -----------------------------------------*/
+.clients li {
+    display: block;
+    float: left;
+    width: 172px;
+    height: 80px;
+}
+
+.clients li a {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 80px;
+}
+
+.clients li.cl1, .clients li.cl1 a {
+    background: url('../img/client1.png') 50% 0 no-repeat;
+}
+
+.clients li.cl2, .clients li.cl2 a {
+    background: url('../img/client2.png') 50% 0 no-repeat;
+}
+
+.clients li.cl3, .clients li.cl3 a {
+    background: url('../img/client3.png') 50% 0 no-repeat;
+}
+
+.clients li.cl4, .clients li.cl4 a {
+    background: url('../img/client4.png') 50% 0 no-repeat;
+}
+
+.clients li.cl1 a, .clients li.cl2 a, .clients li.cl3 a, .clients li.cl4 a, .clients li.cl5 a {
+    background-position: 50% 100%;
+}
+
+/*------------------------------- Payment Slider ----------------------------------------*/
+.payment li {
+    display: block;
+    float: left;
+    width: 177px;
+    height: 80px;
+}
+
+.payment li a {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 80px;
+}
+
+.payment li.pl1, .payment li.pl1 a {
+    background: url('../img/payment1.png') 50% 0 no-repeat;
+}
+
+.payment li.pl2, .payment li.pl2 a {
+    background: url('../img/payment2.png') 50% 0 no-repeat;
+}
+
+.payment li.pl3, .payment li.pl3 a {
+    background: url('../img/payment3.png') 50% 0 no-repeat;
+}
+
+.payment li.pl4, .payment li.pl4 a {
+    background: url('../img/payment4.png') 50% 0 no-repeat;
+}
+
+.payment li.pl1 a, .payment li.pl2 a, .payment li.pl3 a, .payment li.pl4 a, .payment li.pl5 a {
+    background-position: 50% 100%;
+}
+
+/*----------------------------------- Blocks --------------------------------------------*/
+.block {
+    float: left;
+    width: 800px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #e5e5e5;
+    padding: 15px 25px;
+    margin-bottom: 23px;
+}
+
+.block p {
+    font: 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding-right: 30px;
+}
+
+.block h2 {
+    padding-bottom: 15px;
+}
+
+.characters {
+    margin-top: 30px;
+}
+
+.characters img, .balance img {
+    float: left;
+}
+
+.characters .text, .balance .text {
+    float: right;
+    padding: 40px 25px 0 0;
+    width: 350px;
+}
+
+.shop img, .account img {
+    float: right;
+}
+
+.shop .text, .account .text {
+    float: left;
+    padding: 40px 0 0 25px;
+    width: 350px;
+}
+
+.function {
+    float: left;
+    width: 263px;
+    margin: 20px 30px 10px 0;
+}
+
+.function.f3 {
+    margin-right: 0;
+}
+
+.function h3 {
+    background: url('../img/gear.png') 0 50% no-repeat;
+    padding-left: 65px;
+    line-height: 55px;
+}
+
+/*------------------------------- Functional Table ---------------------------------------*/
+.functional table {
+    width: 100%;
+    color: #4f4f4f;
+    vertical-align: middle;
+    background: #fff;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin: 20px 0;
+}
+
+.functional table tr.odd {
+    background: #f5f5f5;
+}
+
+.functional table tr.even {
+    background: #fff;
+}
+
+.functional table th {
+    font: bold 20px Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding: 27px 28px;
+    background: url('../img/th.png') 0 0 repeat-x;
+    height: 20px;
+}
+
+.functional table th.title {
+    text-align: left;
+    width: 232px;
+}
+
+.functional table td {
+    font-size: 13px;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.functional table td.title {
+    font-size: 18px;
+    text-align: left;
+    padding: 20px 28px;
+}
+
+.functional table tr.odd td.dark {
+    background: #ededed;
+}
+
+.functional table tr.even td.dark {
+    background: #f4f4f4;
+}
+
+/*------------------------------------- Order Button -------------------------------------*/
+.butOrder {
+    float: left;
+    width: 100%;
+    height: 131px;
+    background: url('../img/butBuy.png') 50% 100% no-repeat;
+    margin-top: 10px;
+}
+
+.butOrder button {
+    display: block;
+    width: 342px;
+    height: 79px;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+    background: none;
+    position: relative;
+}
+
+.butOrder b {
+    position: absolute;
+    width: 100%;
+    height: 79px;
+    left: 0;
+    top: 0;
+    background: url('../img/butBuy.png') 0 0 no-repeat;
+}
+
+/*------------------------------------- Carousel -------------------------------------*/
+
+.jcarousel-container {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.clients .jcarousel-container {
+    background: #e5e5e5;
+    border-bottom: 1px solid #fff;
+    width: 690px;
+    height: 80px;
+    padding: 10px 40px;
+    margin: 35px auto 20px;
+}
+
+.payment .jcarousel-container {
+    background: #fff;
+    width: 710px;
+    height: 80px;
+    padding: 10px 30px;
+    margin: 20px auto 35px;
+}
+
+.clients .jcarousel-clip {
+    overflow: hidden;
+    width: 690px;
+    height: 80px;
+    text-align: center;
+}
+
+.payment .jcarousel-clip {
+    overflow: hidden;
+    width: 710px;
+    height: 80px;
+}
+
+.clients .jcarousel-clip ul {
+    display: inline-block;
+    text-align: center;
+}
+
+.clients .jcarousel-item {
+    width: 172px;
+    height: 80px;
+    text-align: center;
+    float: left;
+}
+
+.payment .jcarousel-item {
+    width: 177px;
+    height: 80px;
+    text-align: center;
+    float: left;
+}
+
+.jcarousel-skin-tango .jcarousel-item-placeholder {
+}
+
+/*------------ Buttons ----------*/
+.jcarousel-next {
+    position: absolute;
+    top: 22px;
+    right: -61px;
+    width: 44px;
+    height: 58px;
+    cursor: pointer;
+    background: transparent url('../img/nextPrev.png') no-repeat 100% 0;
+}
+
+.jcarousel-next b {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 58px;
+    background: transparent url('../img/nextPrev.png') no-repeat 100% 100%;
+}
+
+.jcarousel-next-disabled, .jcarousel-next-disabled b {
+    background: none;
+}
+
+.jcarousel-next:hover, .jcarousel-next:focus {
+    background-position: 100% 100%;
+}
+
+.jcarousel-prev {
+    position: absolute;
+    top: 22px;
+    left: -61px;
+    width: 44px;
+    height: 58px;
+    cursor: pointer;
+    background: transparent url('../img/nextPrev.png') no-repeat 0 0;
+}
+
+.jcarousel-prev b {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 44px;
+    height: 58px;
+    background: transparent url('../img/nextPrev.png') no-repeat 0 100%;
+}
+
+.jcarousel-prev-disabled, .jcarousel-prev-disabled b {
+    background: none;
+}
+
+.jcarousel-prev:hover, .jcarousel-prev:focus {
+    background-position: 0 100%;
+}

@@ -1,0 +1,40 @@
+/*--------------- Wrapper ----------------------*/
+#wrapper {
+    margin-bottom: 0;
+}
+
+/*--------------- Banners ---------------------*/
+a.banner {
+    _margin-right: 10px;
+    behavior: url(../../js/ie/ie-css3.htc);
+}
+
+/*--------------- Footer ---------------------*/
+#footerWrap {
+    position: relative;
+}
+
+/*---------- Content Elements ----------------*/
+.rounded {
+    behavior: url(../../js/ie/ie-css3.htc);
+}
+
+/*---------------Buttons----------------------*/
+#content a.button {
+    _margin: 10px 10px 20px 0;
+}
+
+#content a.smallBlue {
+    _margin: 0 20px 10px 0;
+}
+
+/*--------------- Table ----------------------*/
+/* нечетная строка */
+tr.odd td {
+    background: #e5f4ff;
+}
+
+/* четная строка */
+tr.even td {
+    background: #fff;
+}

@@ -1,0 +1,765 @@
+/********* CSS Reset ***********/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/******** Global *********/
+html, body {
+    margin: 0;
+    padding: 0;
+    min-width: 990px;
+    height: 100%;
+}
+
+body {
+    font: 12px/1.5 Arial, Helvetica, sans-serif;
+    color: #4c4c4c;
+    background: #000 url('../img/back.jpg') 50% 0 no-repeat;
+}
+
+#container_outer {
+    float: left;
+    width: 100%;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    position: relative;
+}
+
+#container {
+    margin: 0 auto;
+    width: 990px;
+}
+
+#wrapper {
+    float: left;
+    width: 990px;
+    margin-bottom: 180px;
+}
+
+/******** Header *********/
+#header {
+    float: right;
+    width: 990px;
+    height: 171px;
+    position: relative;
+}
+
+#header .logo {
+    display: block;
+    float: left;
+    width: 230px;
+    height: 65px;
+    position: absolute;
+    top: 57px;
+    left: 0;
+}
+
+.logo a:link, .logo a:visited {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 65px;
+}
+
+.logo a:hover, .logo a:active {
+}
+
+#phone {
+    position: absolute;
+    top: 55px;
+    left: 425px;
+    font: 28px Georgia, "Times New Roman", Times, serif;
+    color: #fff;
+}
+
+#adr {
+    position: absolute;
+    top: 98px;
+    left: 425px;
+    color: #fff;
+}
+
+#kontakt {
+    position: absolute;
+    top: 75px;
+    right: 0px;
+    width: 135px;
+}
+
+#kontakt_button {
+    float: left;
+    clear: both;
+    width: 114px;
+    height: 21px;
+    background: url('../img/kontakt.png') 0 0 no-repeat;
+    margin-bottom: 10px;
+}
+
+a.kontakt:link, a.kontakt:visited {
+    display: block;
+    float: left;
+    clear: both;
+    color: #f3ffa2;
+    text-decoration: underline;
+}
+
+a.kontakt:hover, a.kontakt:active {
+    text-decoration: none;
+}
+
+/******** Main Menu *********/
+ul.main_menu {
+    display: block;
+    float: left;
+    height: 40px;
+    width: 97%;
+    list-style: none;
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+
+ul.main_menu li {
+    display: block;
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+    height: 40px;
+    line-height: 40px;
+}
+
+ul.main_menu li a:link, ul.main_menu li a:visited {
+    font-size: 12px;
+    color: #fff;
+    line-height: 40px;
+    padding: 0 19px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+ul.main_menu li a:hover, ul.main_menu li a:active {
+    text-decoration: none;
+}
+
+ul.main_menu li.active {
+    padding-right: 10px;
+    background: url('../img/li_right.png') 100% 50% no-repeat;
+}
+
+ul.main_menu li.active span {
+    background: url('../img/li_left.png') 0 50% no-repeat;
+    font-size: 12px;
+    color: #fff;
+    line-height: 40px;
+    padding: 5px 8px 7px 19px;
+    text-transform: uppercase;
+    cursor: default;
+    white-space: nowrap;
+    line-height: 40px;
+}
+
+/******** Content *********/
+#content {
+    float: right;
+    width: 720px;
+    position: relative;
+}
+
+#content p {
+    font-size: 12px;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+#content h1 {
+    font-size: 24px;
+    color: #f3ffa2;
+    padding-bottom: 15px;
+    font-weight: normal;
+}
+
+#content h2 {
+    font-size: 22px;
+    color: #f3ffa2;
+    padding-bottom: 15px;
+}
+
+#content h3 {
+    font-size: 20px;
+    color: #f3ffa2;
+    padding-bottom: 15px;
+    font-weight: normal;
+}
+
+#content h4 {
+    font-size: 16px;
+    color: #f3ffa2;
+    padding-bottom: 12px;
+    font-weight: normal;
+}
+
+#content h5 {
+    font-size: 14px;
+    color: #f3ffa2;
+    padding-bottom: 10px;
+    font-weight: normal;
+}
+
+#content h6 {
+    font-size: 14px;
+    color: #f3ffa2;
+    padding: 3px 0 5px 0;
+}
+
+#content a:link, #content a:visited {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px dotted #fff;
+}
+
+#content a:hover, #content a:active {
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+}
+
+#content ul, #content ol {
+    color: #fff;
+    margin: 0 0 10px 30px;
+    font-size: 11px;
+}
+
+#content ul li, #content ol li {
+    padding-bottom: 5px;
+}
+
+#content #articles ul, #content #articles ol {
+    margin: 0 0 0 0;
+    font-size: 12px;
+}
+
+#path {
+    width: 100%;
+    float: right;
+    color: #f484a2;
+    font-size: 10px;
+    text-align: right !important;
+    margin: -10px 20px 10px 0;
+}
+
+#content #path a {
+    color: #f484a2;
+    text-align: right;
+    border-bottom: 1px dotted #f484a2;
+}
+
+#content #path a:hover {
+    color: #f484a2;
+    text-align: right;
+    border-bottom: 1px solid #f484a2;
+}
+
+.buts {
+    float: left;
+    width: 100%;
+}
+
+.but {
+    display: block;
+    float: left;
+    width: 186px;
+    height: 60px;
+    background: url('img/but.png') 0 0 no-repeat;
+    text-align: center;
+    color: #fbe3ed;
+    font: 20px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    padding-top: 13px;
+    margin: 20px 52px 40px 0;
+    text-shadow: #000 1px 1px 1px;
+}
+
+#content a.but:link {
+    border: none;
+}
+
+#content a.but:hover {
+    border: none;
+    background-position: 0 -73px;
+    color: #f0bdd3;
+}
+
+.buts2 {
+    float: left;
+    width: 100%;
+}
+
+.but2 {
+    display: block;
+    float: left;
+    width: 160px;
+    height: 60px;
+    background: url('img/but2.png') 0 0 no-repeat;
+    text-align: center;
+    color: #fbe3ed;
+    font: 20px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    padding-top: 13px;
+    margin: 20px 15px 40px 0;
+    text-shadow: #000 1px 1px 1px;
+}
+
+#content a.but2:link {
+    border: none;
+}
+
+#content a.but2:hover {
+    border: none;
+    background-position: 0 -73px;
+    color: #f0bdd3;
+}
+
+table.photos {
+    width: 100%;
+}
+
+table.photos tr {
+}
+
+table.photos td {
+    padding: 5px;
+}
+
+#content table.photos a {
+    border: none;
+}
+
+table.photos img {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #999;
+    padding: 3px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+table.photos img:hover {
+    border-color: #F30;
+}
+
+/******** Sidebar Left *********/
+#sidebar-left {
+    float: left;
+    width: 250px;
+    padding: 0 0 0 0;
+    margin: 0 0px 20px 0;
+}
+
+#sidebar-left h3 {
+    color: #4c4c4c;
+    font-size: 24px;
+    font-weight: normal;
+    padding-bottom: 15px;
+}
+
+#sidebar-left p {
+    color: #4c4c4c;
+    font-size: 12px;
+    padding-bottom: 10px;
+    line-height: 1.5;
+}
+
+.block {
+    float: left;
+    width: 250px;
+}
+
+ul.catalog_menu {
+    display: block;
+    float: left;
+    width: 100%;
+    list-style: none;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin-left: -10px;
+}
+
+ul.catalog_menu li {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #7d1919;
+    padding: 5px 0 0 0;
+}
+
+ul.catalog_menu li#n1 {
+    background: url('../img/li1.png') 10px 0 no-repeat;
+}
+
+ul.catalog_menu li#n2 {
+    background: url('../img/li2.png') 10px 0 no-repeat;
+}
+
+ul.catalog_menu li#n3 {
+    background: url('../img/li3.png') 10px 0 no-repeat;
+}
+
+ul.catalog_menu li#n4 {
+    background: url('../img/li4.png') 10px 0 no-repeat;
+}
+
+ul.catalog_menu li#n5 {
+    background: url('../img/li5.png') 10px 0 no-repeat;
+}
+
+ul.catalog_menu li a:link, ul.catalog_menu li a:visited {
+    font-size: 17px;
+    color: #fff;
+    font-style: italic;
+    text-decoration: none;
+    padding: 0 0 0 25px;
+}
+
+ul.catalog_menu li a:hover, ul.catalog_menu li a:active {
+    text-decoration: underline;
+}
+
+ul.catalog_menu li.active {
+}
+
+ul.catalog_menu li.active a {
+    text-decoration: underline;
+    color: #ffb7cb;
+}
+
+ul.catalog_menu ul {
+    width: 100%;
+    list-style: none;
+    margin: 5px 0 0 0px;
+    padding: 10px 0 10px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul.catalog_menu ul li {
+    width: auto;
+    clear: both;
+    display: inline;
+    font-size: 12px;
+    background: url('../img/li.png') 50px 60% no-repeat;
+    padding: 0 0 0 65px;
+    margin: 0 0 5px 0;
+}
+
+ul.catalog_menu ul li a:link, ul.catalog_menu ul li a:visited {
+    color: #fff;
+    font-style: normal;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 0;
+}
+
+ul.catalog_menu ul li a:hover, ul.catalog_menu ul li a:active {
+    text-decoration: underline;
+}
+
+ul.catalog_menu ul li.active {
+}
+
+ul.catalog_menu ul li.active a {
+    text-decoration: underline;
+    color: #f3ffa2;
+}
+
+ul.catalog_menu li.active ul li a:hover {
+    text-decoration: underline;
+}
+
+/******** Footer *********/
+#footer_outer {
+    float: left;
+    width: 100%;
+    height: 102px;
+    background: url('../img/footer.gif') 50% 100% repeat-x;;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+#footer {
+    margin: 0 auto;
+    width: 950px;
+    height: 77px;
+    background: transparent;
+    padding-top: 25px;
+}
+
+#footer p {
+    font-size: 11px;
+    color: #fff;
+    line-height: 1.5;
+    padding: 0;
+    text-align: left;
+}
+
+#rights p, #links p, #created p {
+    color: #fff;
+}
+
+#rights a, #links a, #created a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#rights a:hover, #links a:hover, #created a:hover {
+    text-decoration: none;
+}
+
+#rights {
+    float: left;
+    width: 230px;
+}
+
+#links {
+    float: left;
+    width: 400px;
+}
+
+#links p {
+    float: left;
+    padding-left: 20px;
+}
+
+#created {
+    float: right;
+    width: 260px;
+}
+
+/******** Images *********/
+.left {
+    float: left;
+    margin: 5px 10px 5px 0;
+    clear: left;
+    _margin-left: 5px;
+}
+
+.right {
+    float: right;
+    margin: 5px 0 5px 10px;
+    clear: right;
+    _margin-right: 5px;
+}
+
+.border {
+    display: block;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.shadow {
+    display: block;
+    -moz-box-shadow: 0px 0px 5px #999;
+    -khtml-box-shadow: 0px 0px 5px #999;
+    box-shadow: 0px 0px 5px #999;
+}
+
+/******** Index Page Catalog *********/
+#merch {
+    float: left;
+    width: 100%;
+}
+
+.item.odd,
+.item.even {
+    float: left;
+    width: 33%;
+    position: relative;
+    margin: 0 0 40px 0;
+}
+
+.hit {
+}
+
+.item.odd h2, .item.even h2 {
+    float: left;
+    background: #ae3e62;
+    color: #fff;
+    padding: 8px 25px;
+    margin: 0 0 10px 0;
+    -moz-border-radius: 25px;
+    -khtml-border-radius: 45px;
+    border-radius: 25px;
+}
+
+.item.odd h2 a:link, .item.odd h2 a:visited, .item.even h2 a:link, .item.even h2 a:visited {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.item.odd h2 a:hover, .item.odd h2 a:active, .item.even h2 a:hover, .item.even h2 a:active {
+    text-decoration: none;
+}
+
+.photoBorder {
+    float: left;
+    width: 213px;
+    height: 213px;
+    overflow: hidden;
+}
+
+.item.odd .photoBorder {
+    background: url('../img/photoBorder.png') 0 0 no-repeat;
+}
+
+.item.even .photoBorder {
+    background: url('../img/photoBorder2.png') 0 0 no-repeat;
+}
+
+.photo {
+    float: left;
+    width: 184px;
+    height: 184px;
+    margin: 22px 0 0 23px;
+    overflow: hidden;
+    -moz-border-radius: 190px;
+    -khtml-border-radius: 190px;
+    border-radius: 190px;
+}
+
+.photo a {
+    display: block;
+    overflow: hidden;
+    width: 184px;
+    height: 184px;
+}
+
+.photo img {
+}
+
+.price {
+    position: absolute;
+    right: 25px;
+    bottom: 0px;
+    color: #fff;
+    font-size: 14px;
+    width: 64px;
+    height: 60px;
+    padding: 24px 10px 0 10px;
+    text-align: center;
+    z-index: 5;
+}
+
+.price span {
+    font-size: 24px;
+}
+
+.item.odd .price {
+    background: url('../img/price1.png') 0 0 no-repeat;
+}
+
+.item.even .price {
+    background: url('../img/price2.png') 0 0 no-repeat;
+}
+
+/******** Pages *********/
+#pages {
+    width: 300px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+#pages ul {
+    width: auto;
+    display: inline;
+    padding: 0 5px;
+    cursor: default;
+    margin-left: 0;
+}
+
+#pages ul li {
+    display: inline;
+    color: #fff;
+    list-style: none;
+}
+
+#pages ul li span {
+    color: #F30;
+    padding: 5px 10px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    border-radius: 13px;
+    cursor: default;
+    vertical-align: top;
+    background: #F96;
+}
+
+#pages ul li a:link, #pages ul li a:visited {
+    color: #fff;
+    padding: 6px 10px;
+    background: #F30;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    margin: 0 2px;
+    cursor: pointer;
+    border: none;
+    vertical-align: top;
+}
+
+#pages ul li a:hover, #pages ul li a:active {
+    background: #F96;
+    color: #F30;
+    border: none;
+}
+
+#pages p {
+    display: inline;
+    height: 25px;
+    vertical-align: top;
+}
+
+#pages p a {
+}
+
+#pages p a:hover {
+    text-decoration: none;
+}

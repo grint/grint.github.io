@@ -1,0 +1,12 @@
+.navbar-default > ul {
+    zoom: 1;
+}
+
+.navbar-default .navbar-nav > li {
+// display : inline;
+// zoom : 1;
+}
+
+.popup {
+    filter: alpha(opacity=.5);
+}

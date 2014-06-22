@@ -1,0 +1,51 @@
+.login {
+    _margin-right: 4px;
+}
+
+.login input {
+    _margin: 0 5px 0 4px;
+}
+
+#descr {
+    _margin-right: 18px;
+}
+
+.menu {
+    _margin-left: 5px;
+}
+
+.menu ul {
+    _margin-left: -2px;
+}
+
+.menu ul li a {
+    _margin-left: -2px;
+}
+
+select#ddlCountry {
+    _margin-left: 2px;
+}
+
+input.numericInput.hasDatepicker {
+    _margin-right: 5px;
+}
+
+.form table img.down {
+    _margin-right: 5px;
+}
+
+input.tPriceFrom {
+    _margin-right: 5px;
+}
+
+select#ddlCurrency {
+    _margin-left: -5px;
+}
+
+#pStars input {
+    _margin-top: -1px;
+}
+
+a.ban1 {
+    _margin: 0 42px 0 5px;
+}

@@ -1,0 +1,55 @@
+/********* Content Elements ***********/
+a.contentMenu {
+    _margin-right: 57px;
+}
+
+/********* Wrapper ***********/
+#wrap {
+    _margin-bottom: -10px;
+}
+
+#content {
+    _width: 659px;
+    _margin-bottom: 20px;
+}
+
+#left {
+    _background: none;
+}
+
+/********* Main Menu ***********/
+#main_menu ul {
+    _margin-left: 28px;
+}
+
+#main_menu ul li a {
+    _padding: 0px 26px;
+}
+
+/********* Left Column ***********/
+#leftMenu {
+    _background-position: 45% 97%;
+}
+
+#left ul {
+    _margin-left: 10px;
+}
+
+/********* Images ***********/
+.border {
+    _margin: 5px -4px 5px 0;
+}
+
+/********* Table ***********/
+table.portfolio {
+    _margin-left: 5px;
+}
+
+table.portfolio td {
+    _border-bottom: 6px solid #333333;
+}
+
+/********* Footer ***********/
+#footerWrap {
+    *position: relative;
+}

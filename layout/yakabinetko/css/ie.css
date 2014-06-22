@@ -1,0 +1,11 @@
+a.demo {
+    width: 103 px\0/; /*IE8*/
+}
+
+a.demo:hover {
+    background-position: -119px 0 \0/; /*IE8*/
+}
+
+button.order:hover {
+    background-position: -1px 0 \0/; /*IE8*/
+}

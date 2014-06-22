@@ -1,0 +1,526 @@
+@charset "utf-8";
+/*------------- CSS Reset -------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*------------- Global --------------*/
+html {
+    min-height: 600px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#mainbg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    min-height: 600px;
+    min-width: 1010px;
+    overflow: hidden;
+}
+
+#bgimg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: right;
+}
+
+#man {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+#bgimg img, #man img {
+    height: 100% !important;
+}
+
+#bgimg img {
+    text-align: right;
+    min-height: 600px;
+    min-width: 1010px;
+}
+
+/*------------- TopMenu --------------*/
+#topMenu {
+    float: left;
+    height: 66px;
+    margin-left: 470px;
+    position: relative;
+    z-index: 5;
+    max-width: 690px;
+    font: bold 13px Tahoma, Geneva, sans-serif;
+}
+
+#nav ol {
+    display: table-row;
+}
+
+#nav li {
+    width: auto;
+    display: table-cell;
+    text-align: center;
+    height: 66px;
+    vertical-align: bottom;
+}
+
+#nav li:first-child {
+    padding: 0;
+}
+
+#nav a:link, #nav a:visited {
+    width: 1000px;
+    height: 56px;
+    display: table-cell;
+    vertical-align: middle;
+    color: #ea923d;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 10px 10px 8px;
+}
+
+#nav li a:hover, #nav li.active a {
+    color: #e5d4ab;
+    background-image: url('../img/menuAct.png');
+}
+
+#nav li:nth-child(1) a:hover, #nav li:nth-child(1).active a {
+    background-position: 50% 0;
+}
+
+#nav li:nth-child(2) a:hover, #nav li:nth-child(2).active a {
+    background-position: 50% 0;
+}
+
+#nav li:nth-child(3) a:hover, #nav li:nth-child(3).active a {
+    background-position: 50% -152px;
+}
+
+#nav li:nth-child(4) a:hover, #nav li:nth-child(4).active a {
+    background-position: 50% 0;
+}
+
+#nav li:nth-child(5) a:hover, #nav li:nth-child(5).active a {
+    background-position: 50% -76px;
+}
+
+#nav li:nth-child(6) a:hover, #nav li:nth-child(6).active a {
+    background-position: 50% 0;
+}
+
+/*------------- Left --------------*/
+#left {
+    position: absolute;
+    left: 200px;
+    top: 23px;
+    bottom: 183px;
+    width: 230px;
+}
+
+.title {
+    font: 14px Tahoma, Geneva, sans-serif;
+    text-align: right;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+a.logo {
+    display: block;
+    float: right;
+    clear: both;
+    width: 208px;
+    height: 102px;
+    background: url('../img/logo.png') 0 0 no-repeat;
+    margin-bottom: 30px;
+}
+
+#lang {
+    float: right;
+    clear: both;
+    width: 90px;
+    height: 18px;
+    padding-top: 5px;
+    background: url('../img/ruEngLine.png') 50% 0 no-repeat;
+    margin-bottom: 27px;
+}
+
+.rus, .eng {
+    float: left;
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2b434b;
+    font: 13px Tahoma, Geneva, sans-serif;
+    text-decoration: none;
+}
+
+#lang .active {
+    color: #efa254;
+}
+
+#artistsNames {
+    float: right;
+    text-align: right;
+    width: 180px;
+    color: #000;
+    font: 14px Tahoma, Geneva, sans-serif;
+    text-transform: uppercase;
+}
+
+#artistsNames p {
+    color: #000;
+    padding-bottom: 10px;
+}
+
+#artistsNames b {
+    font-weight: normal;
+    font-size: 10px;
+}
+
+.date {
+    float: right;
+    color: #fff;
+    font: 17px "Times New Roman", Times, serif;
+    text-transform: uppercase;
+    text-align: right;
+    margin-top: 70px;
+}
+
+#icons {
+    position: absolute;
+    left: 195px;
+    bottom: 25px;
+    width: 136px;
+    height: 66px;
+    background: url('../img/icons.png') 0 100% no-repeat;
+}
+
+a.ctb {
+    display: block;
+    float: left;
+    width: 63px;
+    height: 66px;
+}
+
+a.centpart {
+    display: block;
+    float: right;
+    width: 63px;
+    height: 66px;
+}
+
+/*------------- Content --------------*/
+#content {
+    position: absolute;
+    left: 475px;
+    top: 72px;
+    bottom: 163px;
+    min-width: 520px;
+    max-width: 670px;
+    min-height: 328px;
+    padding: 57px 0 0 0;
+    right: 2%;
+}
+
+#content.fullWidth {
+    max-width: 2000px;
+    right: 4%;
+}
+
+#contentWrap {
+    float: right;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-right: 5px;
+}
+
+h1 {
+    color: #eddeb9;
+    font: 30px "Times New Roman", Times, serif;
+    text-transform: uppercase;
+    text-align: right;
+    position: absolute;
+    right: 0px;
+    top: 0;
+}
+
+#content p {
+    font: 16px/28px Tahoma, Geneva, sans-serif;
+    color: #fff;
+    text-align: justify;
+}
+
+#content p img {
+    margin: 5px 15px 5px 0;
+    padding: 3px;
+    border: 1px solid #666;
+}
+
+/*------------- Press --------------*/
+.pressBlock {
+    float: left;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.pressBlock table {
+    width: 100%;
+}
+
+.pressBlock tr:nth-child(2n+1) {
+    background: none;
+}
+
+.pressBlock tr:nth-child(2n) {
+    background-image: url('../img/opacityBg.png');
+}
+
+.pressBlock td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.pressBlock img {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.pressBlock h3, .pressBlock h3 a:link, .pressBlock h3 a:visited {
+    color: #16282f;
+    padding-top: 10px;
+    font: bold 14px Tahoma, Geneva, sans-serif;
+    text-decoration: none;
+}
+
+.pressBlock h3 a:hover, .pressBlock h3 a:active {
+    text-decoration: underline;
+}
+
+#content p.premDesc {
+    color: #fff;
+    font: 14px Tahoma, Geneva, sans-serif;
+    padding-top: 10px;
+}
+
+#content p.premDate, #content p.premMag {
+    color: #23373d;
+    float: left;
+    padding-top: 10px;
+    font: italic bold 16px "Times New Roman", Times, serif;
+}
+
+#content p.premMag {
+    float: right;
+}
+
+/*------------- Video --------------*/
+#video {
+    margin: 0 auto;
+    width: 495px;
+    height: 315px;
+    background: url('../img/videoShadow.png') 50% 100% no-repeat;
+}
+
+/*------------- Actors --------------*/
+#content .character, #content .actor {
+    text-transform: uppercase;
+    color: #2c444e;
+    text-align: center;
+}
+
+#content .character {
+    font: 10px Tahoma, Geneva, sans-serif;
+}
+
+#content .actor {
+    font: 14px Tahoma, Geneva, sans-serif;
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+
+.actor b {
+    font-weight: normal;
+    font-size: 11px;
+}
+
+.jcarousel ul {
+    text-align: center;
+    width: 100%;
+}
+
+.jcarousel ul .wrap {
+    width: 130px;
+    margin: 0 auto;
+    display: block;
+    padding-left: 5px;
+}
+
+.jcarousel ul img {
+    margin: 8px 0;
+    border: none;
+}
+
+.jcarousel ul .jcarousel-container {
+}
+
+.jcarousel ul .jcarousel-direction-rtl {
+    direction: rtl;
+}
+
+.jcarousel ul .jcarousel-container-horizontal {
+    width: 100%;
+}
+
+.jcarousel ul .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel ul .jcarousel-clip-horizontal {
+    width: 100%;
+    height: 256px;
+    padding-top: 30px;
+}
+
+
+.jcarousel ul .jcarousel-item-horizontal {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.jcarousel ul .jcarousel-direction-rtl .jcarousel-item-horizontal {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.jcarousel ul .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+
+
+
+
+.jcarousel-wrapper {
+    margin: 20px auto;
+    position: relative;
+}
+
+/** Carousel **/
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*.jcarousel li {*/
+    /*width: 200px;*/
+    /*float: left;*/
+    /*-moz-box-sizing: border-box;*/
+    /*-webkit-box-sizing: border-box;*/
+    /*box-sizing: border-box;*/
+/*}*/
+
+.jcarousel li {
+    float: left;
+    width: 125px;
+    height: 256px;
+    background: transparent url('../img/photoBack.png') no-repeat 50% 0;
+    padding: 12px 35px 0 9px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.jcarousel img {
+    display: block;
+    max-width: 100%;
+    height: auto !important;
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-next {
+    position: absolute;
+    bottom: -80px;
+    right: 17px;
+    width: 40px;
+    height: 69px;
+    cursor: pointer;
+    background: transparent url('../img/leftRight.png') no-repeat 100% 0;
+}
+
+.jcarousel-control-prev {
+    position: absolute;
+    bottom: -80px;
+    right: 57px;
+    width: 40px;
+    height: 69px;
+    cursor: pointer;
+    background: transparent url('../img/leftRight.png') no-repeat 0 0;
+}

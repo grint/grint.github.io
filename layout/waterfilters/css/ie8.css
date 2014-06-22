@@ -1,0 +1,22 @@
+/* Cancel sticky footer
+-------------------------------------------------*/
+.container_16.page {
+    min-height : auto;
+}
+#middle {
+    padding-bottom : 0;
+}
+#footer {
+    margin-top : 0;
+}
+/* Header cities select
+-------------------------------------------------*/
+.ik_select_filter_wrap input {
+    border : 1px solid #ccc;
+}
+/* Fix with width of the middle part
+-------------------------------------------------*/
+#content .box {
+    float: left;
+    width: 100%;
+}

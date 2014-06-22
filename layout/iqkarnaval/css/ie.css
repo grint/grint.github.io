@@ -1,0 +1,68 @@
+﻿/* Header */
+#header {
+    zoom: 1;
+}
+
+/* Menu */
+#menu ul {
+    *margin-left: -3px;
+}
+
+/* Content */
+#content {
+    _height: 1%;
+}
+
+.block h3, .news h3 {
+    _margin: 5px 2px;
+}
+
+/* Catalog Menu */
+ul.catalog_menu {
+    _margin-left: 2px;
+}
+
+/* Right-side */
+#merch {
+    _height: 1%;
+}
+
+/* Index2 */
+#page_title {
+    _height: 1%;
+    *margin-bottom: 10px;
+}
+
+/*goods */
+#goods_main {
+    _height: 1%;
+}
+
+/* comment */
+#comp {
+    _margin: -20px 31px 0 0;
+}
+
+/* Product Params */
+#filter_params {
+    _margin-left: 5px;
+}
+
+/* Comments */
+#comments {
+    _padding: 22px 10px 12px 20px;
+}
+
+/* Basket */
+.total_line {
+    _height: 1%;
+}
+
+.delivery_select {
+    _padding-top: 0px;
+}
+
+#footer_outer {
+    *position: relative;
+    *margin-bottom: -20px;
+}

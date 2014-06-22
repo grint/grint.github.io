@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Система бронирования туров</title>
+    <meta name="robots" content="noindex, nofollow"/>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+    <!--[if IE 6]>
+    <link href= "css/ie6.css" rel= "stylesheet" media= "all" />
+    <![endif]-->
+
+</head>
+<body>
+<div id="container">
+    <div id="wrapper">
+
+        <!-- Header -->
+        <div class="head"><a href="#" class="logo"></a>
+            <div class="login">
+                <label for="LogInView_LogIn_UserName">Логин:</label>
+                <input type="text" id="LogInView_LogIn_UserName" />
+                <label for="LogInView_LogIn_Password">Пароль:</label>
+                <input type="password" id="LogInView_LogIn_Password" />
+                <input type="submit" value="" class="loginBut" />
+                <a href="#">Регистрация</a>
+                <a href="#">Забыли пароль?</a>
+            </div>
+
+            <div id="descr">
+                <h3>Почему мы?</h3>
+                <p>Ощущение мира, по определению, преобразует смысл жизни, ломая рамки привычных представлений. Согласно
+                    мнению известных философов, знак абстрактен. Гедонизм, следовательно, ясен не всем. Сомнение, как
+                    принято считать, контролирует из ряда вон выходящий позитивизм, ломая рамки привычных
+                    представлений. </p>
+            </div>
+        </div>
+        <!--/ END Header -->
+
+        <!-- Top Menu -->
+        <div class="menu">
+            <ul class="nav">
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Поисковая система</a></li>
+                <li><a href="#">Модули для сайтов</a></li>
+                <li><a href="#">Стоимость</a></li>
+                <li><a href="#">Сайты для турфирм</a></li>
+                <li><a href="#">Техническая поддержка</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <!--/ END Top Menu -->
+
+
+        <div class="content">
+
+            <div class="form_up"></div>
+            <div class="form_border">
+                <div class="form">
+                    <table>
+                        <tr>
+                            <td width="310px"><label for="ddlCity">Город вылета:</label>
+                                <select id="ddlCity">
+                                    <option>Москва</option>
+                                    <option>Санкт-Петербург</option>
+                                </select>
+                                <a href="#">Изменить</a></td>
+                            <td><label>Заезд</label>
+                                <label class="ordinary">с:</label>
+                                <input type="text" class="numericInput hasDatepicker" value="01/12/2010"/>
+                                <label for="tDateTo" class="ordinary">до:</label>
+                                <input type="text" class="numericInput hasDatepicker" id="tDateTo" value="07/12/2010"/>
+                            </td>
+                            <td width="265px"><label>Питание:</label></td>
+                        </tr>
+                        <tr>
+                            <td><label for="ddlCountry">Направление:</label>
+                                <select id="ddlCountry">
+                                    <option>Австрия</option>
+                                    <option>Андорра</option>
+                                    <option>Болгария</option>
+                                </select>
+                            </td>
+                            <td><label>Ночей</label>
+                                <label class="ordinary">от:</label>
+                                <input type="text" class="numericInput" value="3"/>
+                                <img class="tAdultsUp up" src="img/plus.gif" alt="+"/>
+                                <img class="tAdultsDown down" src="img/minus.gif" alt="-"/>
+                                <label class="ordinary">до:</label>
+                                <input type="text" class="numericInput" value="15"/>
+                                <img class="tAdultsUp up" src="img/plus.gif" alt="+" style="margin:0 -3px;"/>
+                                <img class="tAdultsDown down" src="img/minus.gif" alt="-"/>
+                            </td>
+                            <td class="cblMealsBody">
+                                <p><input type="checkbox"/><label>All</label></p>
+                                <p><input type="checkbox"/><label>BB</label></p>
+                                <p><input type="checkbox"/><label>Call</label></p>
+                                <p><input type="checkbox"/><label>FB</label></p>
+                                <p><input type="checkbox"/><label>FB+</label></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="adult-child">
+                                <label>Взрослых:</label>
+                                <input type="text" class="numericInput" value="2"/>
+                                <img class="tAdultsUp up" src="img/plus.gif" alt="+"/>
+                                <img class="tAdultsDown down" src="img/minus.gif" alt="-"/>
+                                <label class="ordinary">Детей:</label>
+                                <input type="text" class="numericInput" value="0"/>
+                                <img class="tAdultsUp up" src="img/plus.gif" alt="+"/>
+                                <img class="tAdultsDown down" src="img/minus.gif" alt="-"/>
+                            </td>
+                            <td>
+                                <label>Цена</label>
+                                <label class="ordinary tPriceLabel">от:</label>
+                                <input type="text" class="tPriceFrom" value="1000"/>
+                                <label class="tPriceLabel">до:</label>
+                                <input type="text" class="tPriceFrom" value="10000"/>
+                                <select id="ddlCurrency">
+                                    <option value="RUB" selected="selected">RUB</option>
+                                    <option value="USD">USD</option>
+                                    <option value="EUR">EUR</option>
+                                </select>
+                            </td>
+                            <td class="cblMealsBody">
+                                <p><input type="checkbox"/><label>HB</label></p>
+                                <p><input type="checkbox"/><label>HB+</label></p>
+                                <p><input type="checkbox"/><label>RO</label></p>
+                                <p><input type="checkbox"/><label>UAI</label></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="resorts">Города/Курорты:</label>
+                                <label>Звёздность:</label>
+                            </td>
+                            <td id="place-ticket">
+                                <input type="checkbox"/><label>Есть места в отеле</label>
+                                <input type="checkbox" id="pTickets"/><label>Есть билеты</label>
+                            </td>
+                            <td>
+                                <label>Туроператоры:</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align:top;">
+                                <div id="pCountryCity" class="checkBoxList">
+                                    <p><input type="checkbox"/><label>Айн Сохна</label></p>
+                                    <p><input type="checkbox"/><label>Александрия</label></p>
+                                    <p><input type="checkbox"/><label>Асуан</label></p>
+                                    <p><input type="checkbox"/><label>Дахаб</label></p>
+                                    <p><input type="checkbox"/><label>Заафарана</label></p>
+                                    <p><input type="checkbox"/><label>Измаилия</label></p>
+                                    <p><input type="checkbox"/><label>Каир</label></p>
+                                    <p><input type="checkbox"/><label>Луксор</label></p>
+                                    <p><input type="checkbox"/><label>Макади</label></p>
+                                    <p><input type="checkbox"/><label>Марса Алам</label></p>
+                                </div>
+                                <div id="pStars">
+                                    <p><input type="checkbox"/><label>1*</label></p>
+                                    <p><input type="checkbox"/><label>2*</label></p>
+                                    <p><input type="checkbox"/><label>3*</label></p>
+                                    <p><input type="checkbox"/><label>4*</label></p>
+                                    <p><input type="checkbox"/><label>5*</label></p>
+                                    <p><input type="checkbox"/><label>HV-1</label></p>
+                                    <p><input type="checkbox"/><label>HV-2</label></p>
+                                    <p><input type="checkbox"/><label>APART</label></p>
+                                    <p><input type="checkbox"/><label>Б/К</label></p>
+                                    <p><input type="checkbox"/></p>
+                                </div>
+                            </td>
+                            <td style="vertical-align:top;">
+                                <label for="pCityHotel">Отели:</label>
+                                <input type="text" class="ordinaryInput" value="поиск..." id="tHotel"/>
+                                <div id="pCityHotel" class="checkBoxList">
+                                    <p><input type="checkbox"/><label>Albatros Aqua Blu Resort</label></p>
+                                    <p><input type="checkbox"/><label>Albatros Aqua Blu Sharm (ex.Bora Bora Aqua Park)</label></p>
+                                    <p><input type="checkbox"/><label>Albatros Aqua Vista Resort &amp; Spa</label></p>
+                                    <p><input type="checkbox"/><label>Albatros Palace Resort (ex.Albatros Club)</label></p>
+                                    <p><input type="checkbox"/><label>Alf Leila Wa Leila (1001 Nights)</label></p>
+                                    <p><input type="checkbox"/><label>Amphoras Holiday Resort Emerald Club</label></p>
+                                    <p><input type="checkbox"/><label>Amwaj Abu Soma Resort &amp; Spa</label></p>
+                                    <p><input type="checkbox"/><label>Baron Heliopolis</label></p>
+                                </div>
+                            </td>
+                            <td style="vertical-align:top;">
+                                <div id="pOperators" class="checkBoxList">
+                                    <p><input type="checkbox"/><label>Coral Travel</label></p>
+                                    <p><input type="checkbox"/><label>Mostravel</label></p>
+                                    <p><input type="checkbox"/><label>NC Travel</label></p>
+                                    <p><input type="checkbox"/><label>PAC group</label></p>
+                                    <p><input type="checkbox"/><label>Paradise tour</label></p>
+                                    <p><input type="checkbox"/><label>Pegas Touristik</label></p>
+                                    <p><input type="checkbox"/><label>Troyka Holding</label></p>
+                                    <p><input type="checkbox"/><label>Анекс тур</label></p>
+                                    <p><input type="checkbox"/><label>Атлас</label></p>
+                                    <p><input type="checkbox"/><label>Бон Тур</label></p>
+                                    <p><input type="checkbox"/><label>Верса</label></p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><input class="button search" type="button"/></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                </div>
+                <!--/ END Form -->
+            </div>
+            <!--/ END Form Border -->
+
+            <div class="form_dn"></div>
+
+            <a href="#" class="banner ban1" title=""></a>
+            <a href="#" class="banner ban2" title=""></a>
+            <a href="#" class="banner ban3" title=""></a>
+
+            <!-- News -->
+            <div class="news">
+                <div class="news_block first">
+                    <p class="date">17 ноября 2010</p>
+                    <a href="#" class="title">Новая версия модуля поиска туров</a>
+                    <p class="anons">Мы уверены, что теперь наши варианты модулей украсят и облагородят абсолютно любой
+                        сайт и как всегда наполнят его только</p>
+                </div>
+                <div class="news_block">
+                    <p class="date">17 ноября 2010</p>
+                    <a href="#" class="title">Новая версия модуля поиска туров</a>
+                    <p class="anons">Мы уверены, что теперь наши варианты модулей украсят и облагородят абсолютно любой
+                        сайт и как всегда наполнят его только</p>
+                </div>
+                <div class="news_block last">
+                    <p class="date">17 ноября 2010</p>
+                    <a href="#" class="title">Новая версия модуля поиска туров</a>
+                    <p class="anons">Мы уверены, что теперь наши варианты модулей украсят и облагородят абсолютно любой
+                        сайт и как всегда наполнят его только</p>
+                </div>
+            </div>
+            <!--/ END News -->
+
+        </div>
+        <!--/ END Content -->
+    </div>
+    <!--/ END Wrapper -->
+
+    <!-- Footer -->
+    <div id="footer">
+        <p class="phone">Тел.: +7 (812) 123-45-67; +7 (812) 123-45-67<br/>
+        Факс.: +7 (812) 123-45-67; E-mail: <a href="mailto:info@sletat.ru">info@sletat.ru</a></p>
+        <p class="adr">ОАО “Sletat.ru” - Туристическая поисковая система © 2010 Все права защищены<br/>
+            Россия, 123098, Санкт-Петербург, Садовая ул., 150</p>
+    </div>
+    <!--/ END Footer -->
+
+</div>
+<!--/ ENDContainer -->
+
+</body>
+</html>
